@@ -277,8 +277,29 @@ header {
     color: #555;
 }
 
+#projects .cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+#projects .cta-btn:hover {
+    background-color: #444;
+}
 
+#projects .cta-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/*services section */
 #services {
     padding: 50px 20px;
     background: #f9f9f9;
@@ -504,3 +525,4 @@ footer p {
 html {
     scroll-behavior: smooth;
 }
+
