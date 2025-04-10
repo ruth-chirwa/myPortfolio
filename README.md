@@ -1,6 +1,6 @@
-# Ruth Chirwa - Dummy Portfolio
+# Ruth Chirwa - My Portfolio
 
-Welcome to my dummy portfolio website! This website is a placeholder for showcasing my skills as a **Full-Stack Developer** and **UI/UX Designer**. It's currently a work-in-progress, and some sections may be under development.
+Welcome to my  portfolio website! This website is a placeholder for showcasing my skills as a **Full-Stack Developer** and **UI/UX Designer**. It's currently a work-in-progress, and some sections may be under development.
 
 ## Table of Contents
 - [About Me](#about-me)
