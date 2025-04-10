@@ -7,6 +7,7 @@
     <meta name="description" content="This page contains my portfolio">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
+
     <title>Ruth's Portfolio</title>
 </head>
 <body>
@@ -31,19 +32,23 @@
 
     <main>
        
-        <!-- Home section -->
-        <section id="home">
-            <div class="home-container">
-                <div class="home-image">
-                    <img src="img/IMG-7859 (1).jpeg" alt="Ruth Chirwa" loading="lazy">
-                </div>
-                <div class="home-content">
-                    <h1>I'm Ruth Chirwa</h1>
-                    <p>A passionate Full-Stack Developer & UI/UX Designer.</p>
-                    <a href="#about" class="cta-btn">Learn More</a>
-                </div>
-            </div>
-        </section>
+       <!-- Home section -->
+<section id="home">
+    <div class="home-container">
+        <!-- Image with floating effect -->
+        <div class="home-image">
+            <img src="img/IMG-7859 (1).jpeg" alt="Ruth Chirwa" loading="lazy">
+        </div>
+
+        <!-- Text content with stylish animations -->
+        <div class="home-content">
+            <h1>I'm <span>Ruth Chirwa</span></h1>
+            <p>A passionate Full-Stack Developer & UI/UX Designer.</p>
+            <a href="#about" class="cta-btn">Learn More</a>
+        </div>
+    </div>
+</section>
+
 
         <!-- About me section -->
     <section id="about">
@@ -154,18 +159,57 @@
     </div>
 </section>
 
-
+<section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <div>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" placeholder="Your full name" required>
+      </div>
+      
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="you@example.com" required>
+      </div>
+      
+      <div>
+        <label for="subject">Subject:</label><br>
+        <input type="text" name="subject" id="subject" placeholder="Subject of your message">
+      </div>
+      
+      <div>
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+      </div>
+      
+      <div>
+        <button type="submit" onclick="submitForm()">Send Message</button>
+      </div>
+    </form>
+  </section>
+  
 
 <!-- Footer -->
 <footer>
     <address>Area 15, Lilongwe, Malawi</address>
     <article>
-        <h2>Contact</h2>
         <p>Email: chirwaruth647@email.com</p>
     </article>
     &copy; Ruth Chirwa, 2025
 </footer>
     </main>    
-    
+    <script>
+        function submitForm() {
+          // Get form data
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+      
+          // Just for demo purposes
+          alert(`Thank you, ${name}! Your message has been received.`);
+      
+          // You can add more logic here, like sending data to a server using fetch()
+        }
+        </script>
 </body>
 </html>
